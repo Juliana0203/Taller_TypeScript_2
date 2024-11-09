@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Series</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center text-primary mb-4">TV Series</h1>
+    <div class="row">
+
+      <div class="col-md-8">
+        <table class="table table-hover table-bordered shadow-sm">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+            </tr>
+          </thead>
+          <tbody id="series-table-body"></tbody>
+        </table>
+        <p id="average-seasons" class="text-center font-weight-bold">Average seasons:</p>
+      </div>
+      
+      <div class="col-md-4">
+        <div id="series-details" class="card" style="display: none;">
+          <img id="series-image" class="card-img-top" src="" alt="Series Image">
+          <div class="card-body">
+            <h5 id="series-title" class="card-title"></h5>
+            <p id="series-description" class="card-text"></p>
+            <a id="series-link" href="#" target="_blank" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
